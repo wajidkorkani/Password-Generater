@@ -1,6 +1,7 @@
-
-
 import tkinter as tk
+root = tk.Tk()
+entry = tk.Entry(root, font=("Arial", 14), width=30)
+entry.pack(pady=20)
 
 def password_generator():
     import random
@@ -27,5 +28,23 @@ def password_generator():
         passwordList += str(list_of_lists[list_number][charecter_number])
         length -= 1
 
+    entry.delete(0, tk.END)
+    entry.insert(0, passwordList)
 
 
+
+root.title("Password Generator")
+root.config(bg="black")
+button = tk.Button(
+    root,
+    text="Generate Password",
+    command=password_generator,
+    bg="red",
+    fg="white",
+    font=("Arial", 16),
+    padx=10,
+    pady=5,
+    width=20,
+    )
+button.pack()
+root.mainloop()
