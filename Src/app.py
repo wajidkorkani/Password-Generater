@@ -1,10 +1,11 @@
 import tkinter as tk
+import random
+
 root = tk.Tk()
 entry = tk.Entry(root, font=("Arial", 14), width=30)
 entry.pack(pady=20)
 
 def password_generator():
-    import random
 
     list_of_lists = [
         ['!','@','#','$','%','^','&','*','(',')','-','+','=','{','}','[',']','|',':',';','<','>','.','?','/'],
