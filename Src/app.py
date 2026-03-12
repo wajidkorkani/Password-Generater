@@ -2,8 +2,10 @@ import tkinter as tk
 import random
 
 root = tk.Tk()
-entry = tk.Entry(root, font=("Arial", 14), width=30)
+entry = tk.Entry(root, font=("Arial", 20), width=30)
 entry.pack(pady=20)
+entry.pack(padx=20)
+entry.insert(0, "Your Password Will Appear Here")
 
 def password_generator():
 
