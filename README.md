@@ -32,6 +32,12 @@ When the **Generate Password** button is pressed, the script randomly selects on
 ### **Running the App**
 1. **Save the code** to a file named `app.py`.
 2. **Open your terminal** or command prompt.
-3. **Run the script:**
+3. **Run the script on windows:**
    ```bash
    python app.py
+   ```
+4. **Run the script on linux:**
+   ```bash
+   python3 app.py
+   ```
+5. **Click the "Generate Password" button** to see your new password appear in the entry field.
