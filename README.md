@@ -30,8 +30,8 @@ When the **Generate Password** button is pressed, the script randomly selects on
 * **Tkinter** (Usually included with Python. If not, install via `pip install tk` or your system package manager).
 
 ### **Running the App**
-1. **Save the code** to a file named `main.py`.
+1. **Save the code** to a file named `app.py`.
 2. **Open your terminal** or command prompt.
 3. **Run the script:**
    ```bash
-   python main.py
+   python app.py
