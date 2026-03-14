@@ -1,9 +1,10 @@
 import customtkinter as ctk
 import random
-import pyperclip # Run 'pip install pyperclip' to make the copy button work
+import pyperclip
 
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue") 
+
 
 def password_generator():
     # Fixed the lowercase letters in the 4th list
@@ -30,13 +31,6 @@ def copy_password():
 root = ctk.CTk()
 root.title("Password Generator")
 root.geometry("500x400")
-
-# Icon for the title bar
-try:
-    icon = tk.PhotoImage(file='icon.png')
-    root.wm_iconphoto(False, icon)
-except:
-    pass # Prevents crash if icon.png is missing
 
 center_frame = ctk.CTkFrame(root, width=400, height=300, corner_radius=20)
 center_frame.place(relx=0.5, rely=0.5, anchor="center")
