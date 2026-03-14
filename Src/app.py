@@ -2,7 +2,9 @@ import tkinter as tk
 import random
 
 root = tk.Tk()
-entry = tk.Entry(root, font=("Arial", 20), width=30)
+center_frame = tk.Frame(root, width=400, height=200, bg="black")
+center_frame.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+entry = tk.Entry(center_frame, font=("Arial", 20), width=30, justify='center')
 entry.pack(pady=20)
 entry.pack(padx=20)
 entry.insert(0, "Your Password Will Appear Here")
@@ -39,7 +41,7 @@ def password_generator():
 root.title("Password Generator")
 root.config(bg="black")
 button = tk.Button(
-    root,
+    center_frame,
     text="Generate Password",
     command=password_generator,
     bg="red",
